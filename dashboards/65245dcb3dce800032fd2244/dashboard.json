@@ -1,0 +1,40 @@
+{
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aSampleIAAaRetail",
+        "fullname": "LocalHost/Sample Retail",
+        "id": "localhost_aSampleIAAaRetail",
+        "title": "Sample Retail"
+    },
+    "desc": "",
+    "filters": "./filters.json",
+    "hierarchies": [
+    ],
+    "layout": "./layout.json",
+    "oid": "65245dcb3dce800032fd2244",
+    "settings": {
+        "autoUpdateOnFiltersChange": true
+    },
+    "style": {
+        "palette": {
+            "colors": [
+                "#00cee6",
+                "#9b9bd7",
+                "#6EDA55",
+                "#fc7570",
+                "#fbb755",
+                "#218A8C"
+            ],
+            "name": "Vivid"
+        }
+    },
+    "title": "Vlad 1",
+    "widgets": [
+        "./widgets/65245dcb3dce800032fd2245/widget.json",
+        "./widgets/65245dcb3dce800032fd2246/widget.json",
+        "./widgets/65245dcb3dce800032fd2247/widget.json",
+        "./widgets/65245dcb3dce800032fd2248/widget.json",
+        "./widgets/65245dcb3dce800032fd2249/widget.json",
+        "./widgets/65245dcb3dce800032fd224a/widget.json"
+    ]
+}

@@ -1,0 +1,258 @@
+{
+    "_dataSourcePermission": "owner",
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "65245dcb3dce800032fd2244",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aSampleIAAaRetail",
+        "fullname": "LocalHost/Sample Retail",
+        "id": "localhost_aSampleIAAaRetail",
+        "title": "Sample Retail"
+    },
+    "desc": null,
+    "lastOpened": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "format": {
+                            "color": {
+                                "type": "color"
+                            },
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": true,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "number": {
+                                    "separated": true
+                                }
+                            }
+                        },
+                        "jaql": {
+                            "context": {
+                                "[06084-0CA]": {
+                                    "column": "Region",
+                                    "datatype": "text",
+                                    "dim": "[DimCountries.Region]",
+                                    "merged": true,
+                                    "table": "DimCountries",
+                                    "title": "Region"
+                                },
+                                "[3A0E4-C0E]": {
+                                    "collapsed": false,
+                                    "column": "Region",
+                                    "datasource": {
+                                        "address": "LocalHost",
+                                        "database": "aSisenseIAAaOnIAAaBoardingIAAaSample",
+                                        "fullname": "LocalHost/Sisense On Boarding Sample",
+                                        "id": "aLOCALHOST_aSISENSEIAAaONIAAaBOARDINGIAAaSAMPLE",
+                                        "title": "Sisense On Boarding Sample"
+                                    },
+                                    "datatype": "text",
+                                    "dim": "[DimCountries.Region]",
+                                    "filter": {
+                                        "explicit": true,
+                                        "members": [
+                                            "Europe"
+                                        ],
+                                        "multiSelection": true
+                                    },
+                                    "merged": true,
+                                    "table": "DimCountries",
+                                    "title": "Region"
+                                },
+                                "[48591-740]": {
+                                    "agg": "sum",
+                                    "column": "PurchaseCost",
+                                    "datatype": "numeric",
+                                    "dim": "[Fact_Purchase_Orders.PurchaseCost]",
+                                    "table": "Fact_Purchase_Orders",
+                                    "title": "Total PurchaseCost"
+                                },
+                                "[670FF-2C0]": {
+                                    "agg": "sum",
+                                    "column": "OrderRevenue",
+                                    "datatype": "numeric",
+                                    "dim": "[Fact_Sale_orders.OrderRevenue]",
+                                    "table": "Fact_Sale_orders",
+                                    "title": "Total OrderRevenue"
+                                }
+                            },
+                            "formula": "(SUM([670FF-2C0]-[48591-740]),[3A0E4-C0E])",
+                            "title": "EU Profit",
+                            "type": "measure"
+                        }
+                    }
+                ],
+                "name": "value"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "mask": {
+                                "decimals": "auto",
+                                "percent": true
+                            }
+                        },
+                        "jaql": {
+                            "context": {
+                                "[1B56D-6E9]": {
+                                    "context": {
+                                        "[2CBAA-300]": {
+                                            "agg": "sum",
+                                            "column": "PurchaseCost",
+                                            "datatype": "numeric",
+                                            "dim": "[Fact_Purchase_Orders.PurchaseCost]",
+                                            "table": "Fact_Purchase_Orders",
+                                            "title": "Total PurchaseCost"
+                                        },
+                                        "[CA051-D32]": {
+                                            "column": "OrderRevenue",
+                                            "datatype": "numeric",
+                                            "dim": "[Fact_Sale_orders.OrderRevenue]",
+                                            "table": "Fact_Sale_orders",
+                                            "title": "Order Revenue"
+                                        }
+                                    },
+                                    "formula": "sum([CA051-D32])-[2CBAA-300]",
+                                    "title": "Profit",
+                                    "type": "measure"
+                                },
+                                "[83697-622]": {
+                                    "context": {
+                                        "[37D8D-7AE]": {
+                                            "agg": "sum",
+                                            "column": "PurchaseCost",
+                                            "datatype": "numeric",
+                                            "dim": "[Fact_Purchase_Orders.PurchaseCost]",
+                                            "table": "Fact_Purchase_Orders",
+                                            "title": "Total PurchaseCost"
+                                        },
+                                        "[43025-06D]": {
+                                            "agg": "sum",
+                                            "column": "OrderRevenue",
+                                            "datatype": "numeric",
+                                            "dim": "[Fact_Sale_orders.OrderRevenue]",
+                                            "table": "Fact_Sale_orders",
+                                            "title": "Total OrderRevenue"
+                                        },
+                                        "[56FCC-185]": {
+                                            "column": "Region",
+                                            "datatype": "text",
+                                            "dim": "[DimCountries.Region]",
+                                            "merged": true,
+                                            "table": "DimCountries",
+                                            "title": "Region"
+                                        },
+                                        "[B2103-950]": {
+                                            "collapsed": false,
+                                            "column": "Region",
+                                            "datasource": {
+                                                "address": "LocalHost",
+                                                "database": "aSisenseIAAaOnIAAaBoardingIAAaSample",
+                                                "fullname": "LocalHost/Sisense On Boarding Sample",
+                                                "id": "aLOCALHOST_aSISENSEIAAaONIAAaBOARDINGIAAaSAMPLE",
+                                                "title": "Sisense On Boarding Sample"
+                                            },
+                                            "datatype": "text",
+                                            "dim": "[DimCountries.Region]",
+                                            "filter": {
+                                                "explicit": true,
+                                                "members": [
+                                                    "Europe"
+                                                ],
+                                                "multiSelection": true
+                                            },
+                                            "merged": true,
+                                            "table": "DimCountries",
+                                            "title": "Region"
+                                        }
+                                    },
+                                    "formula": "(SUM([43025-06D]-[37D8D-7AE]),[B2103-950])",
+                                    "title": "EU Profit",
+                                    "type": "measure"
+                                }
+                            },
+                            "formula": "[83697-622]/[1B56D-6E9]",
+                            "title": "EU Profit1",
+                            "type": "measure"
+                        }
+                    }
+                ],
+                "name": "secondary"
+            },
+            {
+                "items": [
+                ],
+                "name": "min"
+            },
+            {
+                "items": [
+                ],
+                "name": "max"
+            },
+            {
+                "items": [
+                ],
+                "name": "filters"
+            }
+        ]
+    },
+    "oid": "65245dcb3dce800032fd2248",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "select",
+        "disallowSelector": true,
+        "selector": false,
+        "supportsHierarchies": false,
+        "triggersDomready": true
+    },
+    "style": {
+        "components": {
+            "icon": {
+                "enabled": true,
+                "inactive": true
+            },
+            "secondaryTitle": {
+                "enabled": true,
+                "inactive": false
+            },
+            "title": {
+                "enabled": true,
+                "inactive": false
+            }
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "skin": "vertical",
+        "subtype": "simple"
+    },
+    "subtype": "indicator/numeric",
+    "title": "",
+    "type": "indicator"
+}

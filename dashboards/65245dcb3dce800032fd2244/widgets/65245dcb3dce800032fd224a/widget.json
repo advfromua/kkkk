@@ -1,0 +1,294 @@
+{
+    "_dataSourcePermission": "owner",
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "65245dcb3dce800032fd2244",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aSampleIAAaRetail",
+        "fullname": "LocalHost/Sample Retail",
+        "id": "localhost_aSampleIAAaRetail",
+        "title": "Sample Retail"
+    },
+    "desc": null,
+    "drillToDashboardConfig": {
+        "dashboardIds": [
+        ],
+        "dirty": true,
+        "displayDashboardsPane": true,
+        "displayFilterPane": true,
+        "displayHeaderRow": true,
+        "displayToolbarRow": true,
+        "drillToDashboardMenuCaption": "Jump to dashboard",
+        "drillToDashboardNavigateType": 3,
+        "drillToDashboardNavigateTypeCharts": 1,
+        "drillToDashboardNavigateTypeOthers": 3,
+        "drillToDashboardNavigateTypePivot": 2,
+        "drillToDashboardRightMenuCaption": "Jump to ",
+        "drilledDashboardDisplayType": 2,
+        "drilledDashboardPrefix": "_drill",
+        "excludeFilterDims": [
+        ],
+        "hideDrilledDashboards": true,
+        "includeFilterDims": [
+        ],
+        "resetDashFiltersAfterJTD": false,
+        "showFolderNameOnMenuSelection": false,
+        "volatile": false
+    },
+    "drilledDashboardDisplay": {
+    },
+    "lastOpened": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "format": {
+                            "color": {
+                                "conditions": [
+                                    {
+                                        "color": "#fc7570",
+                                        "expression": "0",
+                                        "expressionValue": "0",
+                                        "operator": "<"
+                                    },
+                                    {
+                                        "color": "#6eda55",
+                                        "expression": "0.1",
+                                        "expressionValue": "0.1",
+                                        "operator": "≤"
+                                    },
+                                    {
+                                        "color": "#1de7ff",
+                                        "expression": "0.1",
+                                        "expressionValue": "0.1",
+                                        "operator": ">"
+                                    }
+                                ],
+                                "type": "condition"
+                            },
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": false,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "jaql": {
+                            "context": {
+                                "[922AD-021]": {
+                                    "context": {
+                                        "[0DC55-C1D]": {
+                                            "agg": "sum",
+                                            "column": "PurchaseCost",
+                                            "datatype": "numeric",
+                                            "dim": "[Fact_Purchase_Orders.PurchaseCost]",
+                                            "table": "Fact_Purchase_Orders",
+                                            "title": "Total PurchaseCost"
+                                        },
+                                        "[B8022-AC0]": {
+                                            "context": {
+                                                "[06744-77B]": {
+                                                    "agg": "sum",
+                                                    "column": "OrderRevenue",
+                                                    "datatype": "numeric",
+                                                    "dim": "[Fact_Sale_orders.OrderRevenue]",
+                                                    "table": "Fact_Sale_orders",
+                                                    "title": "Total OrderRevenue"
+                                                },
+                                                "[5546C-447]": {
+                                                    "agg": "sum",
+                                                    "column": "PurchaseCost",
+                                                    "datatype": "numeric",
+                                                    "dim": "[Fact_Purchase_Orders.PurchaseCost]",
+                                                    "table": "Fact_Purchase_Orders",
+                                                    "title": "Total PurchaseCost"
+                                                }
+                                            },
+                                            "formula": "[06744-77B]-[5546C-447]",
+                                            "title": "Profit",
+                                            "type": "measure"
+                                        }
+                                    },
+                                    "formula": "[B8022-AC0]/[0DC55-C1D]",
+                                    "title": "Actual Margin",
+                                    "type": "measure"
+                                }
+                            },
+                            "formula": "[922AD-021]",
+                            "title": "[Actual Margin]",
+                            "type": "measure"
+                        }
+                    }
+                ],
+                "name": "value"
+            },
+            {
+                "items": [
+                ],
+                "name": "secondary"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": false,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "jaql": {
+                            "context": {
+                            },
+                            "formula": "-0.25",
+                            "title": "-0.25",
+                            "type": "measure"
+                        }
+                    }
+                ],
+                "name": "min"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": false,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "jaql": {
+                            "context": {
+                            },
+                            "formula": "0.25",
+                            "title": "0.25",
+                            "type": "measure"
+                        }
+                    }
+                ],
+                "name": "max"
+            },
+            {
+                "items": [
+                ],
+                "name": "filters"
+            }
+        ]
+    },
+    "oid": "65245dcb3dce800032fd224a",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "filter",
+        "disallowSelector": true,
+        "drillTarget": {
+            "caption": "_drill_Profit_Analysis",
+            "folder": "5852a12c1536272c15000025",
+            "oid": "587e1750ceefb09c44000051"
+        },
+        "noTitle": false,
+        "selector": false,
+        "supportsHierarchies": false,
+        "triggersDomready": true
+    },
+    "size": "big",
+    "style": {
+        "components": {
+            "labels": {
+                "enabled": true,
+                "inactive": false
+            },
+            "secondaryTitle": {
+                "enabled": true,
+                "inactive": true
+            },
+            "ticks": {
+                "enabled": true,
+                "inactive": false
+            },
+            "title": {
+                "enabled": true,
+                "inactive": false
+            }
+        },
+        "indicator/gauge": {
+            "components": {
+                "labels": {
+                    "enabled": true,
+                    "inactive": false
+                },
+                "secondaryTitle": {
+                    "enabled": true,
+                    "inactive": true
+                },
+                "ticks": {
+                    "enabled": true,
+                    "inactive": false
+                },
+                "title": {
+                    "enabled": true,
+                    "inactive": false
+                }
+            },
+            "skin": "1",
+            "subtype": "round"
+        },
+        "indicator/numeric": {
+            "components": {
+                "icon": {
+                    "enabled": true,
+                    "inactive": false
+                },
+                "secondaryTitle": {
+                    "enabled": true,
+                    "inactive": true
+                },
+                "title": {
+                    "enabled": true,
+                    "inactive": false
+                }
+            },
+            "skin": "vertical",
+            "subtype": "simple"
+        },
+        "indicator/pictogram": {
+        },
+        "skin": "2",
+        "subtype": "round"
+    },
+    "subtype": "indicator/gauge",
+    "title": "Margin",
+    "type": "indicator"
+}

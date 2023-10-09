@@ -1,0 +1,55 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "CustomerID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "CustomerID",
+            "oid": "96f7c9f2-d3a4-4596-961d-48062fdb1642",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "StoreID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "StoreID",
+            "oid": "63ca6ff4-f1da-4f66-b17f-e82aa7b59ed5",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "TerritoryID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "TerritoryID",
+            "oid": "ee079918-0c37-470d-8071-58adcf4da902",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        }
+    ],
+    "configOptions": {
+        "Table": "DimCustomers.csv"
+    },
+    "dataset": "01fac1e3-38d2-4cff-a1b1-c57a1367bade",
+    "hidden": false,
+    "id": "DimCustomers.csv",
+    "isMaterialized": false,
+    "name": "DimCustomers",
+    "oid": "a1e6ff62-11de-4909-ba10-f57b45ce3296",
+    "tupleTransformations": [
+    ],
+    "type": "base"
+}

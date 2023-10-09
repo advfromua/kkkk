@@ -1,0 +1,29 @@
+{
+    "buildDestination": {
+        "database": null,
+        "destination": "elasticube"
+    },
+    "datasets": [
+        "./0b4bfeee-f69c-4b89-bd6b-5176bdd73f3f/dataset.json",
+        "./14816749-7eaf-465c-863a-b79cc02bf712/dataset.json",
+        "./e1238f56-83d4-499d-aba2-dcb166437ee0/dataset.json",
+        "./f3cfab33-b6ab-4986-b308-9a6c8e75aeec/dataset.json"
+    ],
+    "experiments": {
+    },
+    "fiscal": "system",
+    "lastSuccessfulManualBuildStartTime": null,
+    "modelStatistics": {
+        "enableModelStatistics": false,
+        "maxTablesPerCollection": 0,
+        "recollectStatsInterval": 0
+    },
+    "oid": "9b79e2fa-e6a5-4543-9232-7dc6039e6045",
+    "relationType": "regular",
+    "relations": "./relations.json",
+    "relationsTables": [
+    ],
+    "schemaId": null,
+    "title": "Vlad 2",
+    "type": "extract"
+}

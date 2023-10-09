@@ -1,0 +1,45 @@
+{
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aSampleIAAaECommerce",
+        "id": "localhost_aSampleIAAaECommerce",
+        "title": "Sample ECommerce"
+    },
+    "desc": "",
+    "filters": "./filters.json",
+    "hierarchies": [
+    ],
+    "layout": "./layout.json",
+    "oid": "65245e033dce800032fd22f9",
+    "options": {
+        "manual": false
+    },
+    "settings": {
+        "autoUpdateOnFiltersChange": true
+    },
+    "style": {
+        "palette": {
+            "colors": [
+                "#00cee6",
+                "#9b9bd7",
+                "#6EDA55",
+                "#fc7570",
+                "#fbb755",
+                "#218A8C"
+            ],
+            "name": "Vivid"
+        }
+    },
+    "title": "Vlad 8",
+    "widgets": [
+        "./widgets/65245e033dce800032fd22fa/widget.json",
+        "./widgets/65245e033dce800032fd22fb/widget.json",
+        "./widgets/65245e033dce800032fd22fc/widget.json",
+        "./widgets/65245e033dce800032fd22fd/widget.json",
+        "./widgets/65245e033dce800032fd22fe/widget.json",
+        "./widgets/65245e033dce800032fd22ff/widget.json",
+        "./widgets/65245e033dce800032fd2300/widget.json",
+        "./widgets/65245e033dce800032fd2301/widget.json",
+        "./widgets/65245e033dce800032fd2302/widget.json"
+    ]
+}

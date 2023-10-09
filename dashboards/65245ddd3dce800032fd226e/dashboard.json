@@ -1,0 +1,44 @@
+{
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aSampleIAAaLeadIAAaGeneration",
+        "fullname": "LocalHost/Sample Lead Generation",
+        "id": "localhost_aSampleIAAaLeadIAAaGeneration",
+        "title": "Sample Lead Generation"
+    },
+    "desc": "",
+    "filters": "./filters.json",
+    "hierarchies": [
+    ],
+    "layout": "./layout.json",
+    "oid": "65245ddd3dce800032fd226e",
+    "options": {
+        "manual": false
+    },
+    "settings": {
+        "autoUpdateOnFiltersChange": true
+    },
+    "style": {
+        "palette": {
+            "colors": [
+                "#00cee6",
+                "#9b9bd7",
+                "#6EDA55",
+                "#fc7570",
+                "#fbb755",
+                "#218A8C"
+            ],
+            "name": "Vivid"
+        }
+    },
+    "title": "Vlad 3",
+    "widgets": [
+        "./widgets/65245ddd3dce800032fd226f/widget.json",
+        "./widgets/65245ddd3dce800032fd2270/widget.json",
+        "./widgets/65245ddd3dce800032fd2271/widget.json",
+        "./widgets/65245ddd3dce800032fd2272/widget.json",
+        "./widgets/65245ddd3dce800032fd2273/widget.json",
+        "./widgets/65245ddd3dce800032fd2274/widget.json",
+        "./widgets/65245ddd3dce800032fd2275/widget.json"
+    ]
+}

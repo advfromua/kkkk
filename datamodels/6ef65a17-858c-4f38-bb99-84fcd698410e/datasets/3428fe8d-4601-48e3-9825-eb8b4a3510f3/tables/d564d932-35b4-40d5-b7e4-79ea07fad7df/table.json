@@ -1,0 +1,91 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": true,
+            "id": "Product ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Product ID",
+            "oid": "66014481-ea79-4f72-9a5e-0acec05bc4d7",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "CategoryName",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "CategoryName",
+            "oid": "2aa5c9a8-b357-4025-b95b-7733b7466bb5",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "Color",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "Color",
+            "oid": "0a21959a-febb-4150-a1c2-1d1fe0e42240",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "ProductName",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "ProductName",
+            "oid": "6f6d9b28-798d-42c8-944d-9624d8d72ac3",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "CategoryID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "CategoryID",
+            "oid": "965d197d-9613-45e6-b513-a359e5add4f6",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Price",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Price",
+            "oid": "d77ea904-cf2c-4619-a8ed-7bc47cc66617",
+            "precision": 16,
+            "scale": 16,
+            "size": 50,
+            "type": 5
+        }
+    ],
+    "configOptions": {
+        "Table": "DimProducts.csv"
+    },
+    "dataset": "3428fe8d-4601-48e3-9825-eb8b4a3510f3",
+    "hidden": false,
+    "id": "DimProducts.csv",
+    "isMaterialized": false,
+    "name": "DimProducts",
+    "oid": "d564d932-35b4-40d5-b7e4-79ea07fad7df",
+    "tupleTransformations": [
+    ],
+    "type": "base"
+}

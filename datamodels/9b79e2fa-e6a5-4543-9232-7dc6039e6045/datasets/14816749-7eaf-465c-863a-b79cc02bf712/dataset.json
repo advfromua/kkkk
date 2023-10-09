@@ -1,0 +1,11 @@
+{
+    "connection": "./connection.json",
+    "database": "null",
+    "elasticube": "9b79e2fa-e6a5-4543-9232-7dc6039e6045",
+    "oid": "14816749-7eaf-465c-863a-b79cc02bf712",
+    "schemaName": "null",
+    "tables": [
+        "./e15aff9d-0b03-499a-978a-09304f70662c/table.json"
+    ],
+    "type": "extract"
+}

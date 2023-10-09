@@ -1,0 +1,143 @@
+{
+    "_dataSourcePermission": "owner",
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "65245de43dce800032fd2287",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aSampleIAAaLeadIAAaGeneration",
+        "fullname": "LocalHost/Sample Lead Generation",
+        "id": "localhost_aSampleIAAaLeadIAAaGeneration",
+        "title": "Sample Lead Generation"
+    },
+    "desc": null,
+    "lastOpened": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "jaql": {
+                            "column": "City",
+                            "datatype": "text",
+                            "dim": "[Lead Generation.City]",
+                            "merged": true,
+                            "table": "Lead Generation",
+                            "title": "City"
+                        }
+                    }
+                ],
+                "name": "geo"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "color": {
+                                "maxvalue": null,
+                                "midvalue": null,
+                                "minvalue": null,
+                                "rangeMode": "both",
+                                "steps": 9,
+                                "type": "range"
+                            },
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": false,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "jaql": {
+                            "agg": "sum",
+                            "column": "# Visits",
+                            "datatype": "numeric",
+                            "dim": "[Lead Generation.# Visits]",
+                            "table": "Lead Generation",
+                            "title": "Total # Visits"
+                        }
+                    }
+                ],
+                "name": "color"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": false,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            },
+                            "size": {
+                                "max": 24,
+                                "min": 4
+                            }
+                        },
+                        "jaql": {
+                            "agg": "sum",
+                            "column": "# Converted",
+                            "datatype": "numeric",
+                            "dim": "[Lead Generation.# Converted]",
+                            "table": "Lead Generation",
+                            "title": "Total # Converted"
+                        }
+                    }
+                ],
+                "name": "size"
+            },
+            {
+                "items": [
+                ],
+                "name": "filters"
+            }
+        ]
+    },
+    "oid": "65245de43dce800032fd2289",
+    "options": {
+        "dashboardFiltersMode": "select",
+        "disallowSelector": false,
+        "selector": false,
+        "triggersDomready": true
+    },
+    "style": {
+        "markers": {
+            "fill": "filled",
+            "size": {
+                "defaultSize": 4,
+                "highest": 42,
+                "inactive": false,
+                "lowest": 1,
+                "max": 24,
+                "min": 4,
+                "step": 1
+            }
+        }
+    },
+    "subtype": "map/scatter",
+    "title": "TOTAL VISITOR BY LOCATION",
+    "type": "map/scatter"
+}

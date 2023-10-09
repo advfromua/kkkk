@@ -1,0 +1,33 @@
+{
+    "buildDestination": {
+        "database": null,
+        "destination": "elasticube"
+    },
+    "datasets": [
+        "./05c980c1-6a55-4eb4-8a5b-608517edd8f7/dataset.json",
+        "./3ef16621-39b8-496e-9a46-fa9394d20cfb/dataset.json",
+        "./6e673f63-317e-4e2b-bc50-58edc9bceb05/dataset.json",
+        "./949e4092-95e5-42b0-b053-e50d4f9dcfc3/dataset.json",
+        "./a99c9a96-52a1-49c1-880c-16756a254cf4/dataset.json",
+        "./aa976943-05cd-47ec-bf9c-7df7340aa85a/dataset.json",
+        "./d29981ce-6c40-4d37-964f-48d266a69e41/dataset.json",
+        "./d3baa7ea-a062-4969-8b83-78645ba761f4/dataset.json"
+    ],
+    "experiments": {
+    },
+    "fiscal": "system",
+    "lastSuccessfulManualBuildStartTime": null,
+    "modelStatistics": {
+        "enableModelStatistics": false,
+        "maxTablesPerCollection": 0,
+        "recollectStatsInterval": 0
+    },
+    "oid": "e445af3d-9710-4ee9-9b86-fccf4e1e01b3",
+    "relationType": "regular",
+    "relations": "./relations.json",
+    "relationsTables": [
+    ],
+    "schemaId": null,
+    "title": "Vlad 3",
+    "type": "extract"
+}

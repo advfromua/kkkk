@@ -1,0 +1,48 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "ID",
+            "oid": "25414a10-0f05-456e-a8a4-7d91e3af2dad",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Description",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "Description",
+            "oid": "878ddbcd-b951-4501-bfc7-db28c5bb816c",
+            "precision": 0,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        }
+    ],
+    "configOptions": {
+        "Table": "Diagnosis.csv",
+        "delimiter": ",",
+        "hasHeader": true,
+        "ignoreFirstRows": 0,
+        "ignoreLastRows": 0,
+        "stringQuote": "\""
+    },
+    "dataset": "05c980c1-6a55-4eb4-8a5b-608517edd8f7",
+    "hidden": false,
+    "id": "Diagnosis.csv",
+    "isMaterialized": false,
+    "name": "Diagnosis",
+    "oid": "af54c4c2-309a-406e-98b7-52ef570d7b5c",
+    "tupleTransformations": [
+    ],
+    "type": "base"
+}

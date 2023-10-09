@@ -1,0 +1,31 @@
+{
+    "filters": [
+        {
+            "disabled": false,
+            "instanceid": "23F11-4E02-4E",
+            "isCascading": false,
+            "jaql": {
+                "collapsed": false,
+                "column": "Date",
+                "datasource": {
+                    "address": "LocalHost",
+                    "database": "aSampleIAAaRetail",
+                    "fullname": "LocalHost/Sample Retail",
+                    "id": "localhost_aSampleIAAaRetail",
+                    "title": "Sample Retail"
+                },
+                "datatype": "datetime",
+                "dim": "[DimDate.Date (Calendar)]",
+                "filter": {
+                    "all": true,
+                    "explicit": false,
+                    "multiSelection": true
+                },
+                "level": "months",
+                "merged": true,
+                "table": "DimDate",
+                "title": "Months in Date"
+            }
+        }
+    ]
+}
